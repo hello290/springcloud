@@ -6,3 +6,5 @@ spring:
     username: root
     password: 135420
     driver-class-name: com.mysql.jdbc.Driver
+env:
+  test
