@@ -6,5 +6,10 @@ spring:
     username: root
     password: 135420
     driver-class-name: com.mysql.jdbc.Driver
+  rabbitmq:
+    host: 192.168.186.129
+    port: 5672
+    username: guest
+    password: guest
 env:
   test
