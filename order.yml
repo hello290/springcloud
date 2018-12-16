@@ -17,3 +17,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8762/eureka/
+gitl:
+  name: a
+  age: 18
