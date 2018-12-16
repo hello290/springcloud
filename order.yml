@@ -13,3 +13,7 @@ spring:
     password: guest
 env:
   dev
+eureka:
+  client:
+    service-url:
+      defaulrZone: http://localhost:8762/eureka/
