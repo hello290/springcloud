@@ -10,7 +10,10 @@ spring:
     host: 192.168.186.129
     port: 5672
     username: guest
-    password: guest
+    password: guest 
+  redis:
+    host: 192.168.186.129
+    port: 6379
 env:
  test2
 eureka:
