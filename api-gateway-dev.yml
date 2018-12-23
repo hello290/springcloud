@@ -2,3 +2,23 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8762/eureka/
+zuul:
+  routes:
+    # myProduct可以随意取名
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders:
+    # 简洁写法
+#    product: /myProduct/**
+  # 排除某些路由
+  ignored-patterns:
+    - /**/product/listForOrder
+#    - /product/product/listForOrder
+#    - /myProduct/product/listForOrder
+# 暴露所有端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
