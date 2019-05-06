@@ -3,6 +3,8 @@ eureka:
     service-url:
       defaultZone: http://localhost:8762/eureka/
 zuul:
+  # 全部服务都可以传递cookie
+  sensitive-headers:
   routes:
     # myProduct可以随意取名
     myProduct:
